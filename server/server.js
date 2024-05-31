@@ -13,6 +13,7 @@ app.get('/', (request, response) => {
 })
 
 app.get('/comments', (request, response) => {
+    // returns a bunch of comments 
     response.json(comments)
 })
 
