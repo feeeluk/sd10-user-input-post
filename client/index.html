@@ -4,24 +4,48 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script type="module" src="/main.js" defer></script>
-    <title>progamming forums</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="./app.js" defer></script>
+    <title>Week4 Day4</title>
   </head>
+
   <body>
+
     <div id="app">
-      <div id="comments"></div>
-      <form id="commentForm">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required />
-        <br />
-        <label for="location">Location:</label>
-        <input type="text" id="location" name="location" required />
-        <br />
-        <label for="content">Content:</label>
-        <textarea id="content" name="content" required></textarea>
-        <br />
-        <button type="submit">Submit</button>
-      </form>
+
+      <div id="formSection">
+
+        <form id="commentForm">
+
+          <p>
+            <label class="label" for="username">Username:</label>
+            <input class="input" id="username" name="username" type="text" required>
+          </p>
+  
+          <p>
+            <label class="label" for="location">Location:</label>
+            <input class="input" id="location" name="location" type="text" required>
+          </p>
+   
+          <p>
+            <label class="label" for="content">Content:</label>
+            <textarea class="input multi-line" id="content" name="content" type="text"></textarea>
+          </p>
+  
+          <p>
+            <label class="label" for="submit"></label>
+            <button class="submit" id="submit" name="submit" type="submit">Submit</button>
+          </p>
+  
+        </form>
+        
+      </div>
+
+      <div id="commentsSection">
+
+      </div>
+      
     </div>
+
   </body>
 </html>

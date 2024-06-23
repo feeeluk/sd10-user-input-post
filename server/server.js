@@ -1,10 +1,10 @@
+
 import express from "express"
 import cors from "cors"
 import pg from "pg"
 import dotenv from "dotenv"
 
 import { comments } from "./comments.js"
-
 
 const app = express()
 const PORT = 7272
@@ -22,9 +22,6 @@ app.get('/', (request, response) => {
     response.json({message: `You're looking at my root route, how rude!`})
 })
 
-
-
-
 app.get('/comments', async (request, response) => {
     // returns a bunch of comments from the database
     const result = await db.query(`SELECT * FROM comments`)
@@ -32,16 +29,6 @@ app.get('/comments', async (request, response) => {
     const final = result.rows
     response.json(final)
 })
-
-
-
-
-
-
-
-
-
-
 
 app.post('/comments', (request, response) => {
     console.log(request.body)

@@ -1,0 +1,51 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#formSection{
+    background-color: bisque;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+}
+
+    .label{
+        display: inline-block;
+        width: 90px;
+        vertical-align: top;
+    }
+
+    .input{
+        width: 200px;
+    }
+
+    .multi-line{
+        min-height: 100px;
+    }
+
+#commentsSection{
+    background-color: darkgrey;
+    padding: 5px;
+    padding-top: 185px;
+    width: 100%;
+}
+
+    .username{
+        background-color: green;
+    }
+
+    .location{
+        background-color: lightblue;
+    }
+
+    .content{
+        background-color: pink;
+    }
+
+    .comment{
+        background-color: yellow;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
